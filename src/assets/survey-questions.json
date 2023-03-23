@@ -1,0 +1,88 @@
+{
+    "elements": [
+        {
+            "name": "How was your experience of the website?",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "The website was easy to navigate?",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "Were you able to complete the purpose of your visit?",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "The website had a professional look?",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "Colour choice was used consistently across all the page",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "Menu and content are arranged consistently across every page?",
+            "type": "radiogroup",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response",
+            "choices": [
+                "Very Satisfied",
+                "Satisfied",
+                "Neutral",
+                "Unsatisfied",
+                "Very Unsatisfied"
+            ]
+        },
+        {
+            "name": "Please provide your comments",
+            "type": "comment",
+            "isRequired": true,
+            "requiredErrorText":"Please provide a response"
+        }
+    ]
+}

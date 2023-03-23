@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-dim, #f3f3f3);
+    margin: 0;
+}
+
+.sd-completedpage h3 {
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    padding: 40px 15px;
+    box-shadow: 1px 5px 10px #0001;
+}
