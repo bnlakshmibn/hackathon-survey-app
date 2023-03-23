@@ -6,6 +6,7 @@
 body {
     background-color: var(--background-dim, #f3f3f3);
     margin: 0;
+    overflow: hidden;
 }
 
 .sd-completedpage h3 {
