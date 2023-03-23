@@ -80,9 +80,7 @@
         },
         {
             "name": "Please provide your comments",
-            "type": "comment",
-            "isRequired": true,
-            "requiredErrorText":"Please provide a response"
+            "type": "comment"
         }
     ]
 }
