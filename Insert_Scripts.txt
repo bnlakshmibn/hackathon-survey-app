@@ -1,0 +1,168 @@
+-- CUSTOMER
+INSERT INTO [dbo].[Customer] ([CustomerId], [Name], [Address], [Mobile], [EmailAddress])
+VALUES (1, 'Lakshmi', '1, Test Address, NSW', '0455555555', 'lakshmi@tal.com.au')
+
+INSERT INTO [dbo].[Customer] ([CustomerId], [Name], [Address], [Mobile], [EmailAddress])
+VALUES (2, 'Ritesh', '2, Test Address, NSW', '0422222222', 'ritesh@tal.com.au')
+
+INSERT INTO [dbo].[Customer] ([CustomerId], [Name], [Address], [Mobile], [EmailAddress])
+VALUES (3, 'Vasu', '3, Test Address, NSW', '0466666666', 'vasu@tal.com.au')
+
+-- Questionnaire
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (1, 'How was your experience of the website?')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (2, 'Was the website easy to navigate?')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (3, 'Were you able to complete the purpose of your visit?')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (4, 'The website had a professional look?')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (5, 'Colour choice was consistent across the website?')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (6, 'Please provide your comments.')
+
+INSERT INTO [dbo].[Questionnaire] ([QuestionId], [QuestionText])
+VALUES (7, 'Menu and content were arranged consistently across every page?')
+
+
+-- Option
+INSERT INTO [dbo].[Option] ([OptionId], [Code], [Description])
+VALUES (1, 'a', 'Very Satisfied')
+
+INSERT INTO [dbo].[Option] ([OptionId], [Code], [Description])
+VALUES (2, 'b', 'Satisfied')
+
+INSERT INTO [dbo].[Option] ([OptionId], [Code], [Description])
+VALUES (3, 'c', 'Neutral')
+
+INSERT INTO [dbo].[Option] ([OptionId], [Code], [Description])
+VALUES (4, 'd', 'Unsatisfied')
+
+INSERT INTO [dbo].[Option] ([OptionId], [Code], [Description])
+VALUES (5, 'e', 'Very Unsatisfied')
+
+
+-- Response
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (1, 1, 1, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (2, 2, 1, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (3, 3, 1, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (4, 1, 2, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (5, 2, 2, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (6, 3, 2, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (7, 1, 3, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (8, 2, 3, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (9, 3, 3, 'b', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (10, 1, 4, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (11, 2, 4, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (12, 3, 4, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (13, 1, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (14, 2, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (15, 3, 5, 'b', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (16, 1, 6, null, 'Colour choice can be better')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (17, 2, 6, null, 'It was an awesome experience')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (18, 3, 6, null, 'I would like to know more on TAL insurance products')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (19, 1, 7, 'd', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (20, 2, 7, 'e', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (21, 3, 7, 'e', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (22, null, 1, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (23, null, 1, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (24, null, 1, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (25, null, 2, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (26, null, 2, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (27, null, 2, 'b', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (28, null, 7, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (29, null, 7, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (30, null, 7, 'a', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (31, null, 3, 'd', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (32, null, 3, 'd', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (33, null, 3, 'd', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (34, null, 4, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (35, null, 4, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (36, null, 4, 'a', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (37, null, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (38, null, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (39, null, 5, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (40, null, 5, 'd', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (41, null, 5, 'e', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (42, null, 5, 'a', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (43, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (44, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (45, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (46, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (47, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (48, null, 2, 'a', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (49, null, 6, null, 'Good experience')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (50, null, 6, null, 'Wonderful')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (52, null, 6, null, 'Would like to visit again')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (53, null, 6, null, 'products are expensive')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (54, null, 6, null, 'products are expensive')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (55, null, 6, null, 'products are expensive')
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (56, null, 3, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (57, null, 3, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (58, null, 3, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (59, null, 4, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (60, null, 4, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (61, null, 4, 'd', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (62, null, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (63, null, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (64, null, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (65, null, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (66, null, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (67, null, 5, 'e', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (68, null, 7, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (69, null, 7, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (70, null, 7, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (71, null, 7, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (72, null, 7, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (73, null, 7, 'b', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (75, null, 1, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (76, null, 1, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (77, null, 1, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (78, null, 2, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (79, null, 2, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (80, null, 2, 'd', null)
+
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (81, null, 3, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (82, null, 3, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (83, null, 3, 'c', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (84, null, 4, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (85, null, 4, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (86, null, 4, 'a', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (87, null, 1, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (88, null, 1, 'e', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (89, null, 2, 'e', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (90, null, 2, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (91, null, 5, 'b', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (92, null, 5, 'c', null)
+
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (93, null, 6, null, 'very expensive')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (94, null, 6, null, 'expensive')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (95, null, 6, null, 'need improvement')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (96, null, 6, null, 'very good experience')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (97, null, 6, null, 'good experience')
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (98, null, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (99, null, 5, 'a', null)
+INSERT INTO [dbo].[Response] ([ResponseId], [CustomerId], [QuestionId], [ResponseCode], [Feedback]) VALUES (100, null, 5, 'a', null)
+
+
+

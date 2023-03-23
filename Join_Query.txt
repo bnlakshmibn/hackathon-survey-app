@@ -1,0 +1,13 @@
+-- Query to Get response data based on QuestionId
+
+SELECT [t1].[ResponseId]
+	,[t2].[Name] AS CustomerName
+	,[t3].[QuestionText]
+	,[t1].ResponseCode
+	,[t4].[Description]
+	,[t1].[Feedback]
+FROM [Response] AS [t1]
+INNER JOIN [Customer] AS [t2] ON [t1].CustomerId = [t2].[CustomerId]
+LEFT OUTER JOIN [Questionnaire] AS [t3] ON [t1].[QuestionId] = [t3].[QuestionId]
+LEFT OUTER JOIN [Option] AS [t4] ON [t1].[ResponseCode] = [t4].[Code]
+WHERE [t1].[QuestionId] = 3
